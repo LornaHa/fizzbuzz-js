@@ -15,6 +15,11 @@ describe('FizzBuzz', function() {
       expect(fizzbuzz.isDivisibleByFive(5)).toBe(true);
     });
 
+    it ('divisible by 15', function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true);
+    });
+
   });
 
   describe ('knows when a number is NOT', function() {
@@ -27,6 +32,11 @@ describe('FizzBuzz', function() {
     it ('divisible by 5', function() {
       fizzbuzz = new FizzBuzz();
       expect(fizzbuzz.isDivisibleByFive(1)).toBe(false);
+    });
+
+    it ('divisible by 15', function() {
+      fizzbuzz = new FizzBuzz();
+      expect(fizzbuzz.isDivisibleByFifteen(1)).toBe(false);
     });
 
   });
